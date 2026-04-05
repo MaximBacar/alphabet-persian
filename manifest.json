@@ -1,0 +1,18 @@
+{
+  "name": "Persian Phonetic Transliterator",
+  "short_name": "Persian→FA",
+  "description": "Transliterate Persian text into Latin phonetic script",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f9fafb",
+  "theme_color": "#4c0519",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

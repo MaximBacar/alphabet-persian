@@ -9,6 +9,13 @@
   <meta name="keywords" content="Persian transliteration, Farsi phonetic, Persian to Latin, Farsi romanization, Persian pronunciation, فارسی" />
   <meta name="author" content="Maxim Bacar" />
   <meta name="robots" content="index, follow" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#4c0519" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Persian→FA" />
+  <link rel="apple-touch-icon" href="icon.svg" />
   <meta property="og:title" content="Persian Phonetic Transliterator" />
   <meta property="og:description" content="Instantly transliterate Persian (Farsi) text into Latin phonetic script." />
   <meta property="og:type" content="website" />
@@ -169,6 +176,9 @@
       `;
       ref.appendChild(cell);
     });
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js');
+    }
   </script>
 </body>
 </html>
